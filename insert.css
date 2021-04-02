@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-size: cover;
+  height: 100vh;
+  background-color: #dfe6e9;
+
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: rgb(247, 244, 244);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.wrapper .title h1{
+  color: #1e232b;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.wrapper1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 400px;
+  background: rgb(247, 244, 244);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.wrapper1 .title h1{
+  color: #1e232b;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form{
+  display: flex;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields
+{
+  width: 100%;
+}
+
+.input-fields .input{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #1e232b;
+  padding: 10px;
+  color: #1e232b;
+  width: 100%;
+}
+
+
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #1e232b;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #1e232b;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #1e232b;
+}
+
+.btn {
+    background: #ff3d00;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #1e232b;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .input-fields{
+    width: 100%;
+  }
+
+}
+.contact-form .input-fields .box{
+  margin-bottom: -14px;    
+  margin-left: 6px;
+}
